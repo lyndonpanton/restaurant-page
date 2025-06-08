@@ -3,7 +3,8 @@ function Menu() {
     let menuHeading = document.createElement("h2");
     menuHeading.textContent = "Our Menu";
     let menuIntroduction = document.createElement("p");
-    menuIntroduction.textContent = "...";
+    menuIntroduction.textContent =
+            "Come try our spectacular food from all around the world!";
 
     // Starters
     let starters = document.createElement("article");
