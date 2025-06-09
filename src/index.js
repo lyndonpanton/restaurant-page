@@ -3,6 +3,7 @@ import "./styles.css";
 import Home from "./Home";
 import Menu from "./Menu";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function emptyTab() {
     let main = document.getElementsByTagName("main")[0];
@@ -36,5 +37,6 @@ menuTabButton.addEventListener("click", showMenuTab);
 contactTabButton.addEventListener("click", showContactTab);
 
 showHomeTab();
+Footer();
 
 console.log("Webpack has been configured successfully");
