@@ -317,20 +317,74 @@ function Menu() {
     let beveragesHeading = document.createElement("h3")
     beveragesHeading.textContent = "Beverages";
 
-    let firstBeverage = document.createElement("p");
-    firstBeverage.textContent = "Chapman";
-    let secondBeverage = document.createElement("p");
-    secondBeverage.textContent = "Lassi";
-    let thirdBeverage = document.createElement("p");
-    thirdBeverage.textContent = "Flensburger Lager";
-    let fourthBeverage = document.createElement("p");
-    fourthBeverage.textContent = "Caesar";
-    let fifthBeverage = document.createElement("p");
-    fifthBeverage.textContent = "Instant Coffee";
-    let sixthBeverage = document.createElement("p");
-    sixthMain.textContent = "Cachaça";
+    let firstBeverage = document.createElement("article");
+    let firstBeverageHeading = document.createElement("h4");
+    firstBeverageHeading.textContent = "Chapman";
+    let firstBeverageDescription = document.createElement("p");
+    firstBeverageDescription.textContent = 
+            "A red non-alcholic punch made with fanta, sprite, cucumber, lemon,"
+            + "grenadine, and angostura bitters.";
+    firstBeverage.appendChild(firstBeverageHeading);
+    firstBeverage.appendChild(firstBeverageDescription);
 
-    beverages.appendChild(beveragesHeading);
+    let secondBeverage = document.createElement("article");
+    let secondBeverageHeading = document.createElement("h4");
+    secondBeverageHeading.textContent = "Lassi";
+    let secondBeverageDescription = document.createElement("p");
+    secondBeverageDescription.textContent = 
+            "A smoothie-link drink made from buffalo milk yogurt blended with"
+            + " cumin and cardamom.";
+    secondBeverage.appendChild(secondBeverageHeading);
+    secondBeverage.appendChild(secondBeverageDescription);
+
+    let thirdBeverage = document.createElement("article");
+    let thirdBeverageHeading = document.createElement("h4");
+    thirdBeverageHeading.textContent = "Pilsner";
+    let thirdBeverageDescription = document.createElement("p");
+    thirdBeverageDescription.textContent = 
+            "A pale lager that is brewed with malt and saaz hops and has a"
+            + " slightly bitter taste.";
+    thirdBeverage.appendChild(thirdBeverageHeading);
+    thirdBeverage.appendChild(thirdBeverageDescription);
+
+    let fourthBeverage = document.createElement("article");
+    let fourthBeverageHeading = document.createElement("h4");
+    fourthBeverageHeading.textContent = "Caesar";
+    let fourthBeverageDescription = document.createElement("p");
+    fourthBeverageDescription.textContent = 
+            "A cocktail which contains vodka, clamato, hot sauce, and"
+            + " worcestershire sauce and served with ice, a celery stalk, and a"
+            + " wedge of lime.";
+    fourthBeverage.appendChild(fourthBeverageHeading);
+    fourthBeverage.appendChild(fourthBeverageDescription);
+
+    let fifthBeverage = document.createElement("article");
+    let fifthBeverageHeading = document.createElement("h4");
+    fifthBeverageHeading.textContent = "Instant Coffee";
+    let fifthBeverageDescription = document.createElement("p");
+    fifthBeverageDescription.textContent = 
+            "A creamy and frothy coffee. Can be made with full cream, light, or"
+            + " plant-based milk and optionally sugar to taste.";
+    fifthBeverage.appendChild(fifthBeverageHeading);
+    fifthBeverage.appendChild(fifthBeverageDescription);
+
+    let sixthBeverage = document.createElement("article");
+    let sixthBeverageHeading = document.createElement("h4");
+    sixthBeverageHeading.textContent = "Cachaça";
+    let sixthBeverageDescription = document.createElement("p");
+    sixthBeverageDescription.textContent = 
+            "A distilled spirit made form fermented sugarcane juice.";
+    sixthBeverage.appendChild(sixthBeverageHeading);
+    sixthBeverage.appendChild(sixthBeverageDescription);
+
+    let seventhBeverage = document.createElement("article");
+    let seventhBeverageHeading = document.createElement("h4");
+    seventhBeverageHeading.textContent = "Water";
+    let seventhBeverageDescription = document.createElement("p");
+    seventhBeverageDescription.textContent = 
+            "This can be served still or sparkling and cold or warm.";
+    seventhBeverage.appendChild(seventhBeverageHeading);
+    seventhBeverage.appendChild(seventhBeverageDescription);
     
     beverages.appendChild(beveragesHeading);
     beverages.appendChild(firstBeverage);
@@ -339,6 +393,7 @@ function Menu() {
     beverages.appendChild(fourthBeverage);
     beverages.appendChild(fifthBeverage);
     beverages.appendChild(sixthBeverage);
+    beverages.appendChild(seventhBeverage);
 
     menu.appendChild(starters);
     menu.appendChild(mains);
