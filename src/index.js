@@ -13,18 +13,31 @@ function emptyTab() {
     }
 }
 
-function showHomeTab() {
+function setTabStyling(e) {
+    let tabButtons = document.getElementsByClassName("tab-button");
+
+    for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("tab-button-selected");
+    }
+
+    e.target.classList.add("tab-button-selected");
+}
+
+function showHomeTab(e) {
     emptyTab();
+    setTabStyling(e);
     Home();
 }
 
-function showMenuTab() {
+function showMenuTab(e) {
     emptyTab();
+    setTabStyling(e);
     Menu();
 }
 
-function showContactTab() {
+function showContactTab(e) {
     emptyTab();
+    setTabStyling(e);
     Contact();
 }
 
@@ -36,7 +49,9 @@ homeTabButton.addEventListener("click", showHomeTab);
 menuTabButton.addEventListener("click", showMenuTab);
 contactTabButton.addEventListener("click", showContactTab);
 
-showHomeTab();
+const click = new Event("click");
+homeTabButton.dispatchEvent(click);
+
 Footer();
 
 console.log("Webpack has been configured successfully");
