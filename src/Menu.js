@@ -39,18 +39,66 @@ function Menu() {
     let mainsHeading = document.createElement("h3")
     mainsHeading.textContent = "Mains";
 
-    let firstMain = document.createElement("p");
-    firstMain.textContent = "Jollof Rice with Fried Plantain";
-    let secondMain = document.createElement("p");
-    secondMain.textContent = "Prawn Curry";
-    let thirdMain = document.createElement("p");
-    thirdMain.textContent = "Bayrische Schweinshaxe";
-    let fourthMain = document.createElement("p");
-    fourthMain.textContent = "Pulled Mushroom Chilli";
-    let fifthMain = document.createElement("p");
-    fifthMain.textContent = "Hāngī";
-    let sixthMain = document.createElement("p");
-    sixthMain.textContent = "Farofa";
+    let firstMain = document.createElement("article");
+    let firstMainTitle = document.createElement("h4");
+    firstMainTitle.textContent = "Jollof Rice with Fried Plantain";
+    let firstMainDescription = document.createElement("p");
+    firstMainDescription.textContent =
+            "A Nigerian variant of the classic western African dish. Rice, tomatoes,"
+            + " onions, peppers, and chillis served with fried plantain and a chicken"
+            + " thigh.";
+    firstMain.appendChild(firstMainTitle);
+    firstMain.appendChild(firstMainDescription);
+
+    let secondMain = document.createElement("article");
+    let secondMainTitle = document.createElement("h4");
+    secondMainTitle.textContent = "Prawn Curry";
+    let secondMainDescription = document.createElement("p");
+    secondMainDescription.textContent =
+            "Prawns cooked in masala made from onions, tomatoes, and indian"
+            + " herbs and spices. Served with naan bread and steamed rice.";
+    secondMain.appendChild(secondMainTitle);
+    secondMain.appendChild(secondMainDescription);
+
+    let thirdMain = document.createElement("article");
+    let thirdMainTitle = document.createElement("h4");
+    thirdMainTitle.textContent = "Bayrische Schweinshaxe";
+    let thirdMainDescription = document.createElement("p");
+    thirdMainDescription.textContent =
+            "Ham that has been marinated for several days and roaszted at a low"
+            + " temperature. Served with potato dumplings.";
+    thirdMain.appendChild(thirdMainTitle);
+    thirdMain.appendChild(thirdMainDescription);
+
+    let fourthMain = document.createElement("article");
+    let fourthMainTitle = document.createElement("h4");
+    fourthMainTitle.textContent = "Pulled Mushroom Chilli";
+    let fourthMainDescription = document.createElement("p");
+    fourthMainDescription.textContent =
+            "A mixture of portobellow, shiitake and closed-cup mushrooms served"
+            + " with rice and topped with spring onions.";
+    fourthMain.appendChild(fourthMainTitle);
+    fourthMain.appendChild(fourthMainDescription);
+
+    let fifthMain = document.createElement("article");
+    let fifthMainTitle = document.createElement("h4");
+    fifthMainTitle.textContent = "Hāngī";
+    let fifthMainDescription = document.createElement("p");
+    fifthMainDescription.textContent =
+            "Lamb, potato, sweet potato (kūmara), pumpkins, and cabbage heated"
+            + " in an underground pit oven for several hours.";
+    fifthMain.appendChild(fifthMainTitle);
+    fifthMain.appendChild(fifthMainDescription);
+
+    let sixthMain = document.createElement("article");
+    let sixthMainTitle = document.createElement("h4");
+    sixthMainTitle.textContent = "Hāngī";
+    let sixthMainDescription = document.createElement("p");
+    sixthMainDescription.textContent =
+            "Raw cassava flour toasted with butter, salt, bacon, onions, garlic"
+            + " sauage and olives until golden brown.";
+    sixthMain.appendChild(sixthMainTitle);
+    sixthMain.appendChild(sixthMainDescription);
 
     mains.appendChild(mainsHeading);
     
