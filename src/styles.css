@@ -15,7 +15,7 @@ body, html {
 }
 
 body {
-    background-color: lightcyan;
+    background-color: steelblue;
 
     color: black;
 }
@@ -28,6 +28,8 @@ header {
 
     border-bottom: 2px solid black;
     padding: 40px 20px 0;
+
+    background-color: white;
 }
 
 h1 {
@@ -56,13 +58,60 @@ nav {
 }
 
 .tab-button-selected {
-    background-color: paleturquoise;
+    background-color: lightsteelblue;
+}
+
+/* Main ***********************************************************************/
+main {
+    padding: 40px 15vw;
+
+    background-color: steelblue;
+}
+
+h2 {
+    margin: 0;
+
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+main > * {
+    border-radius: 20px;
+    padding: 80px 60px;
+
+    background-color: aliceblue;
 }
 
 /* Home ***********************************************************************/
+.home-text {
+    font-size: 1.8rem;
+}
+
+#opening-hours-text {
+    text-align: center;
+}
+
+#opening-hours-list {
+    margin: 0;
+
+    list-style-type: none;
+
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#opening-hours-list > li {
+    margin: 10px 0;
+}
 
 /* Menu ***********************************************************************/
 
 /* Contact *********************************************************************/
 
 /* Footer *********************************************************************/
+footer {
+    border-top: 2px solid black;
+    padding: 40px 10vw;
+
+    background-color: white;
+}

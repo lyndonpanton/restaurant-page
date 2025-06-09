@@ -1,16 +1,18 @@
 function Home() {
     let home = document.createElement("section");
     let homeHeading = document.createElement("h2");
-    homeHeading.textContent = "Lyn's Restaurant";
+    homeHeading.textContent = "Welcome!";
     let homeIntroduction = document.createElement("p");
+    homeIntroduction.classList.add("home-text");
     homeIntroduction.textContent =
-            "Come to our restaurant to have some delicious food, see some"
-            + " amazing views, and a fantastic time!";
+            "Come to our restaurant to eat some delicious food, see some"
+            + " amazing views, and have a fantastic time!";
 
     let about = document.createElement("article");
     let aboutHeader = document.createElement("h2");
     aboutHeader.textContent = "About Our Restaurant";
     let aboutText = document.createElement("p");
+    aboutText.classList.add("home-text");
     aboutText.textContent =
             "This restaurant has been open for 100 years and counting! We are"
             + " located at a lovely venue in the middle of the city with a view"
@@ -26,32 +28,35 @@ function Home() {
     let hoursHeading = document.createElement("h2");
     hoursHeading.textContent = "Opening Hours";
     let hoursText = document.createElement("p");
+    hoursText.setAttribute("id", "opening-hours-text");
+    hoursText.classList.add("home-text");
     hoursText.textContent =
             "You can come visit us or order from us during the following"
             + " hours:";
     let hoursList = document.createElement("ul");
+    hoursList.setAttribute("id", "opening-hours-list");
     let hoursMonday = document.createElement("li");
-    hoursMonday.textContent = "Monday: 08:00 - 19:00";
+    hoursMonday.textContent = "Monday: 9am - 7pm";
     let hoursTuesday = document.createElement("li");
-    hoursTuesday.textContent = "Tuesday: 08:00 - 19:00";
+    hoursTuesday.textContent = "Tuesday: 9am - 7pm";
     let hoursWednesday = document.createElement("li");
-    hoursWednesday.textContent = "Wednesday: 08:00 - 19:00";
+    hoursWednesday.textContent = "Wednesday: 9am - 5pm";
     let hoursThursday = document.createElement("li");
-    hoursThursday.textContent = "Thursday: 08:00 - 19:00";
+    hoursThursday.textContent = "Thursday: 9am - 7pm";
     let hoursFriday = document.createElement("li");
-    hoursFriday.textContent = "Friday: 08:00 - 19:00";
+    hoursFriday.textContent = "Friday: 9am - 10pm";
     let hoursSaturday = document.createElement("li");
-    hoursSaturday.textContent = "Saturday: 08:00 - 19:00";
+    hoursSaturday.textContent = "Saturday: 8am - 10pm";
     let hoursSunday = document.createElement("li");
-    hoursSunday.textContent = "Sunday: 08:00 - 19:00";
+    hoursSunday.textContent = "Sunday: 10am - 4pm";
 
-    hoursList.appendChild(hoursMonday)
-                .appendChild(hoursTuesday)
-                .appendChild(hoursWednesday)
-                .appendChild(hoursThursday)
-                .appendChild(hoursFriday)
-                .appendChild(hoursSaturday)
-                .appendChild(hoursSunday);
+    hoursList.appendChild(hoursMonday);
+    hoursList.appendChild(hoursTuesday);
+    hoursList.appendChild(hoursWednesday);
+    hoursList.appendChild(hoursThursday);
+    hoursList.appendChild(hoursFriday);
+    hoursList.appendChild(hoursSaturday);
+    hoursList.appendChild(hoursSunday);
 
     hours.appendChild(hoursHeading);
     hours.appendChild(hoursText);
