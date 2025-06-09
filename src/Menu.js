@@ -1,19 +1,26 @@
 function Menu() {
     let menu = document.createElement("section");
+    menu.setAttribute("id", "menu");
     let menuHeading = document.createElement("h2");
     menuHeading.textContent = "Our Menu";
     let menuIntroduction = document.createElement("p");
     menuIntroduction.textContent =
             "Come try our spectacular food from all around the world!";
 
+    let menuList = document.createElement("article");
+    menuList.setAttribute("id", "menu-list");
+
     // Starters
     let starters = document.createElement("article");
-    let startersHeading = document.createElement("h3");
+    let startersHeading = document.createElement("h3");;
+    startersHeading.classList.add("menu-section-heading");
     startersHeading.textContent = "Starters";
 
     let firstStarter = document.createElement("article");
+    firstStarter.classList.add("menu-item");
+
     let firstStarterTitle = document.createElement("h4");
-    firstStarter.textContent = "Nkwobi";
+    firstStarterTitle.textContent = "Nkwobi";
     let firstStarterDescription = document.createElement("p");
     firstStarterDescription.textContent =
             "A soup delicacy made with cow feet, palm oil, ehuru seeds, utazi"
@@ -23,8 +30,10 @@ function Menu() {
     firstStarter.appendChild(firstStarterDescription);
 
     let secondStarter = document.createElement("article");
+    secondStarter.classList.add("menu-item");
+
     let secondStarterTitle = document.createElement("h4");
-    secondStarter.textContent = "Tandoori Chicken Momos";
+    secondStarterTitle.textContent = "Tandoori Chicken Momos";
     let secondStarterDescription = document.createElement("p");
     secondStarterDescription.textContent =
             "A chicken dumpling that are marinaded with chilli powder, garlic"
@@ -34,8 +43,10 @@ function Menu() {
     secondStarter.appendChild(secondStarterDescription);
 
     let thirdStarter = document.createElement("article");
+    thirdStarter.classList.add("menu-item");
+
     let thirdStarterTitle = document.createElement("h4");
-    thirdStarter.textContent = "Geräucherter Lachs";
+    thirdStarterTitle.textContent = "Geräucherter Lachs";
     let thirdStarterDescription = document.createElement("p");
     thirdStarterDescription.textContent =
             "Small haddock pieces cold smoked in a smokedhouse for two weeks."
@@ -44,8 +55,10 @@ function Menu() {
     thirdStarter.appendChild(thirdStarterDescription);
 
     let fourthStarter = document.createElement("article");
+    fourthStarter.classList.add("menu-item");
+
     let fourthStarterTitle = document.createElement("h4");
-    fourthStarter.textContent = "Split Pea Soup";
+    fourthStarterTitle.textContent = "Split Pea Soup";
     let fourthStarterDescription = document.createElement("p");
     fourthStarterDescription.textContent =
             "Dried split peas cooked in a soup over two hours and topped with"
@@ -54,8 +67,10 @@ function Menu() {
     fourthStarter.appendChild(fourthStarterDescription);
 
     let fifthStarter = document.createElement("article");
+    fifthStarter.classList.add("menu-item");
+
     let fifthStarterTitle = document.createElement("h4");
-    fifthStarter.textContent = "Toroī";
+    fifthStarterTitle.textContent = "Toroī";
     let fifthStarterDescription = document.createElement("p");
     fifthStarterDescription.textContent =
             "A traditional dish made from mussels, pūhā and watercress that are"
@@ -66,8 +81,10 @@ function Menu() {
     fifthStarter.appendChild(fifthStarterDescription);
 
     let sixthStarter = document.createElement("article");
+    sixthStarter.classList.add("menu-item");
+
     let sixthStarterTitle = document.createElement("h4");
-    sixthStarter.textContent = "Acarajé";
+    sixthStarterTitle.textContent = "Acarajé";
     let sixthStarterDescription = document.createElement("p");
     sixthStarterDescription.textContent =
             "Fritters made from black-eyed peas and filled with Vatapá and"
@@ -87,10 +104,12 @@ function Menu() {
 
     // Mains
     let mains = document.createElement("article");
-    let mainsHeading = document.createElement("h3")
+    let mainsHeading = document.createElement("h3");
+    mainsHeading.classList.add("menu-section-heading");
     mainsHeading.textContent = "Mains";
 
     let firstMain = document.createElement("article");
+    firstMain.classList.add("menu-item");
     let firstMainTitle = document.createElement("h4");
     firstMainTitle.textContent = "Jollof Rice with Fried Plantain";
     let firstMainDescription = document.createElement("p");
@@ -102,6 +121,7 @@ function Menu() {
     firstMain.appendChild(firstMainDescription);
 
     let secondMain = document.createElement("article");
+    secondMain.classList.add("menu-item");
     let secondMainTitle = document.createElement("h4");
     secondMainTitle.textContent = "Prawn Curry";
     let secondMainDescription = document.createElement("p");
@@ -112,6 +132,7 @@ function Menu() {
     secondMain.appendChild(secondMainDescription);
 
     let thirdMain = document.createElement("article");
+    thirdMain.classList.add("menu-item");
     let thirdMainTitle = document.createElement("h4");
     thirdMainTitle.textContent = "Bayrische Schweinshaxe";
     let thirdMainDescription = document.createElement("p");
@@ -122,6 +143,7 @@ function Menu() {
     thirdMain.appendChild(thirdMainDescription);
 
     let fourthMain = document.createElement("article");
+    fourthMain.classList.add("menu-item");
     let fourthMainTitle = document.createElement("h4");
     fourthMainTitle.textContent = "Pulled Mushroom Chilli";
     let fourthMainDescription = document.createElement("p");
@@ -132,6 +154,7 @@ function Menu() {
     fourthMain.appendChild(fourthMainDescription);
 
     let fifthMain = document.createElement("article");
+    fifthMain.classList.add("menu-item");
     let fifthMainTitle = document.createElement("h4");
     fifthMainTitle.textContent = "Hāngī";
     let fifthMainDescription = document.createElement("p");
@@ -142,6 +165,7 @@ function Menu() {
     fifthMain.appendChild(fifthMainDescription);
 
     let sixthMain = document.createElement("article");
+    sixthMain.classList.add("menu-item");
     let sixthMainTitle = document.createElement("h4");
     sixthMainTitle.textContent = "Hāngī";
     let sixthMainDescription = document.createElement("p");
@@ -163,10 +187,12 @@ function Menu() {
 
     // Desserts
     let desserts = document.createElement("article");
-    let dessertsHeading = document.createElement("h3")
+    let dessertsHeading = document.createElement("h3");
+    dessertsHeading.classList.add("menu-section-heading");
     dessertsHeading.textContent = "Desserts";
 
     let firstDessert = document.createElement("article");
+    firstDessert.classList.add("menu-item");
     let firstDessertHeading = document.createElement("h4");
     firstDessertHeading.textContent = "Coconut Rice Pudding";
     let firstDessertDescription = document.createElement("p");
@@ -177,6 +203,7 @@ function Menu() {
     firstDessert.appendChild(firstDessertDescription);
 
     let secondDessert = document.createElement("article");
+    secondDessert.classList.add("menu-item");
     let secondDessertHeading = document.createElement("h4");
     secondDessertHeading.textContent = "Kala Jaam";
     let secondDessertDescription = document.createElement("p");
@@ -187,6 +214,7 @@ function Menu() {
     secondDessert.appendChild(secondDessertDescription);
 
     let thirdDessert = document.createElement("article");
+    thirdDessert.classList.add("menu-item");
     let thirdDessertHeading = document.createElement("h4");
     thirdDessertHeading.textContent = "Strudel";
     let thirdDessertDescription = document.createElement("p");
@@ -197,6 +225,7 @@ function Menu() {
     thirdDessert.appendChild(thirdDessertDescription);
 
     let fourthDessert = document.createElement("article");
+    fourthDessert.classList.add("menu-item");
     let fourthDessertHeading = document.createElement("h4");
     fourthDessertHeading.textContent = "Pumpkin Pie";
     let fourthDessertDescription = document.createElement("p");
@@ -207,6 +236,7 @@ function Menu() {
     fourthDessert.appendChild(fourthDessertDescription);
 
     let fifthDessert = document.createElement("article");
+    fifthDessert.classList.add("menu-item");
     let fifthDessertHeading = document.createElement("h4");
     fifthDessertHeading.textContent = "Chocolate Fish";
     let fifthDessertDescription = document.createElement("p");
@@ -218,6 +248,7 @@ function Menu() {
     fifthDessert.appendChild(fifthDessertDescription);
 
     let sixthDessert = document.createElement("article");
+    sixthDessert.classList.add("menu-item");
     let sixthDessertHeading = document.createElement("h4");
     sixthDessertHeading.textContent = "Pastel Romeu e Julieta";
     let sixthDessertDescription = document.createElement("p");
@@ -239,10 +270,12 @@ function Menu() {
 
     // Sides
     let sides = document.createElement("article");
-    let sidesHeading = document.createElement("h3")
+    let sidesHeading = document.createElement("h3");
+    sidesHeading.classList.add("menu-section-heading");
     sidesHeading.textContent = "Sides";
 
     let firstSide = document.createElement("article");
+    firstSide.classList.add("menu-item");
     let firstSideHeading = document.createElement("h4");
     firstSideHeading.textContent = "Pounded Yam";
     let firstSideDescription = document.createElement("p");
@@ -254,6 +287,7 @@ function Menu() {
     firstSide.appendChild(firstSideDescription);
 
     let secondSide = document.createElement("article");
+    secondSide.classList.add("menu-item");
     let secondSideHeading = document.createElement("h4");
     secondSideHeading.textContent = "Murgh Hazrat Mahal";
     let secondSideDescription = document.createElement("p");
@@ -264,6 +298,7 @@ function Menu() {
     secondSide.appendChild(secondSideDescription);
 
     let thirdSide = document.createElement("article");
+    thirdSide.classList.add("menu-item");
     let thirdSideHeading = document.createElement("h4");
     thirdSideHeading.textContent = "Flammkuchen";
     let thirdSideDescription = document.createElement("p");
@@ -274,6 +309,7 @@ function Menu() {
     thirdSide.appendChild(thirdSideDescription);
 
     let fourthSide = document.createElement("article");
+    fourthSide.classList.add("menu-item");
     let fourthSideHeading = document.createElement("h4");
     fourthSideHeading.textContent = "Cheese and Herb Scones";
     let fourthSideDescription = document.createElement("p");
@@ -283,6 +319,7 @@ function Menu() {
     fourthSide.appendChild(fourthSideDescription);
 
     let fifthSide = document.createElement("article");
+    fifthSide.classList.add("menu-item");
     let fifthSideHeading = document.createElement("h4");
     fifthSideHeading.textContent = "Kiwi Onion Dip";
     let fifthSideDescription = document.createElement("p");
@@ -293,6 +330,7 @@ function Menu() {
     fifthSide.appendChild(fifthSideDescription);
 
     let sixthSide = document.createElement("article");
+    sixthSide.classList.add("menu-item");
     let sixthSideHeading = document.createElement("h4");
     sixthSideHeading.textContent = "Bolinho de Bacalhau";
     let sixthSideDescription = document.createElement("p");
@@ -314,10 +352,12 @@ function Menu() {
 
     // Beverages
     let beverages = document.createElement("article");
-    let beveragesHeading = document.createElement("h3")
+    let beveragesHeading = document.createElement("h3");
+    beveragesHeading.classList.add("menu-section-heading");
     beveragesHeading.textContent = "Beverages";
 
     let firstBeverage = document.createElement("article");
+    firstBeverage.classList.add("menu-item");
     let firstBeverageHeading = document.createElement("h4");
     firstBeverageHeading.textContent = "Chapman";
     let firstBeverageDescription = document.createElement("p");
@@ -328,6 +368,7 @@ function Menu() {
     firstBeverage.appendChild(firstBeverageDescription);
 
     let secondBeverage = document.createElement("article");
+    secondBeverage.classList.add("menu-item");
     let secondBeverageHeading = document.createElement("h4");
     secondBeverageHeading.textContent = "Lassi";
     let secondBeverageDescription = document.createElement("p");
@@ -338,6 +379,7 @@ function Menu() {
     secondBeverage.appendChild(secondBeverageDescription);
 
     let thirdBeverage = document.createElement("article");
+    thirdBeverage.classList.add("menu-item");
     let thirdBeverageHeading = document.createElement("h4");
     thirdBeverageHeading.textContent = "Pilsner";
     let thirdBeverageDescription = document.createElement("p");
@@ -348,6 +390,7 @@ function Menu() {
     thirdBeverage.appendChild(thirdBeverageDescription);
 
     let fourthBeverage = document.createElement("article");
+    fourthBeverage.classList.add("menu-item");
     let fourthBeverageHeading = document.createElement("h4");
     fourthBeverageHeading.textContent = "Caesar";
     let fourthBeverageDescription = document.createElement("p");
@@ -359,6 +402,7 @@ function Menu() {
     fourthBeverage.appendChild(fourthBeverageDescription);
 
     let fifthBeverage = document.createElement("article");
+    fifthBeverage.classList.add("menu-item");
     let fifthBeverageHeading = document.createElement("h4");
     fifthBeverageHeading.textContent = "Instant Coffee";
     let fifthBeverageDescription = document.createElement("p");
@@ -369,6 +413,7 @@ function Menu() {
     fifthBeverage.appendChild(fifthBeverageDescription);
 
     let sixthBeverage = document.createElement("article");
+    sixthBeverage.classList.add("menu-item");
     let sixthBeverageHeading = document.createElement("h4");
     sixthBeverageHeading.textContent = "Cachaça";
     let sixthBeverageDescription = document.createElement("p");
@@ -378,6 +423,7 @@ function Menu() {
     sixthBeverage.appendChild(sixthBeverageDescription);
 
     let seventhBeverage = document.createElement("article");
+    seventhBeverage.classList.add("menu-item");
     let seventhBeverageHeading = document.createElement("h4");
     seventhBeverageHeading.textContent = "Water";
     let seventhBeverageDescription = document.createElement("p");
@@ -395,11 +441,15 @@ function Menu() {
     beverages.appendChild(sixthBeverage);
     beverages.appendChild(seventhBeverage);
 
-    menu.appendChild(starters);
-    menu.appendChild(mains);
-    menu.appendChild(desserts);
-    menu.appendChild(sides);
-    menu.appendChild(beverages);
+    menuList.appendChild(starters);
+    menuList.appendChild(mains);
+    menuList.appendChild(desserts);
+    menuList.appendChild(sides);
+    menuList.appendChild(beverages);
+
+    menu.appendChild(menuHeading);
+    menu.appendChild(menuIntroduction);
+    menu.appendChild(menuList);
 
     let main = document.getElementsByTagName("main")[0];
     main.appendChild(menu);

@@ -105,6 +105,35 @@ main > * {
 }
 
 /* Menu ***********************************************************************/
+#menu > p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 8px;
+}
+
+.menu-section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu-item {
+    border-bottom: 1px solid black;
+}
+
+.menu-item > h4 {
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+}
+
+.menu-item > p {
+    font-size: 1.1rem;
+}
 
 /* Contact *********************************************************************/
 

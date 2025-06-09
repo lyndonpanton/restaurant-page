@@ -1,5 +1,6 @@
 function Home() {
     let home = document.createElement("section");
+    home.setAttribute("id", "home");
     let homeHeading = document.createElement("h2");
     homeHeading.textContent = "Welcome!";
     let homeIntroduction = document.createElement("p");
