@@ -167,18 +167,66 @@ function Menu() {
     let dessertsHeading = document.createElement("h3")
     dessertsHeading.textContent = "Desserts";
 
-    let firstDessert = document.createElement("p");
-    firstDessert.textContent = "Coconut Rice Pudding";
-    let secondDessert = document.createElement("p");
-    secondDessert.textContent = "Kala Jaam";
-    let thirdDessert = document.createElement("p");
-    thirdDessert.textContent = "Apr Ikosen-Quarkst Rudel";
-    let fourthDessert = document.createElement("p");
-    fourthDessert.textContent = "Pumpkin Pie";
-    let fifthDessert = document.createElement("p");
-    fifthDessert.textContent = "Chocolate Fish";
-    let sixthDessert = document.createElement("p");
-    sixthDessert.textContent = "Guava Jam Pastel";
+    let firstDessert = document.createElement("article");
+    let firstDessertHeading = document.createElement("h4");
+    firstDessertHeading.textContent = "Coconut Rice Pudding";
+    let firstDessertDescription = document.createElement("p");
+    firstDessertDescription.textContent =
+            "A creamy pudding made from tuwo rice, condensed milk, and coconut"
+            + " milk. Topped with strawberries and blueberries.";
+    firstDessert.appendChild(firstDessertHeading);
+    firstDessert.appendChild(firstDessertDescription);
+
+    let secondDessert = document.createElement("article");
+    let secondDessertHeading = document.createElement("h4");
+    secondDessertHeading.textContent = "Kala Jaam";
+    let secondDessertDescription = document.createElement("p");
+    secondDessertDescription.textContent =
+            "A darker variation of sweet gulab jamun. Paneer and khoya balls"
+            + " are dunked in sugar syrup flavoured with cardamon powder.";
+    secondDessert.appendChild(secondDessertHeading);
+    secondDessert.appendChild(secondDessertDescription);
+
+    let thirdDessert = document.createElement("article");
+    let thirdDessertHeading = document.createElement("h4");
+    thirdDessertHeading.textContent = "Strudel";
+    let thirdDessertDescription = document.createElement("p");
+    thirdDessertDescription.textContent =
+            "A layered pastry filled with apricot, sour cherry, nuts, apricots,"
+            + " plums, poppy seeds and raisins.";
+    thirdDessert.appendChild(thirdDessertHeading);
+    thirdDessert.appendChild(thirdDessertDescription);
+
+    let fourthDessert = document.createElement("article");
+    let fourthDessertHeading = document.createElement("h4");
+    fourthDessertHeading.textContent = "Pumpkin Pie";
+    let fourthDessertDescription = document.createElement("p");
+    fourthDessertDescription.textContent =
+            "A pie made from roasted pumpkin pulp and a cinnamon and ginger"
+            + " crust. Served with a scope of thick pure heavy cream.";
+    fourthDessert.appendChild(fourthDessertHeading);
+    fourthDessert.appendChild(fourthDessertDescription);
+
+    let fifthDessert = document.createElement("article");
+    let fifthDessertHeading = document.createElement("h4");
+    fifthDessertHeading.textContent = "Chocolate Fish";
+    let fifthDessertDescription = document.createElement("p");
+    fifthDessertDescription.textContent =
+            "A thin layer of chocolate enclosing a pink marshmellow center."
+            + " This traditional confectionary typically given as a reward for"
+            + " a job well done.";
+    fifthDessert.appendChild(fifthDessertHeading);
+    fifthDessert.appendChild(fifthDessertDescription);
+
+    let sixthDessert = document.createElement("article");
+    let sixthDessertHeading = document.createElement("h4");
+    sixthDessertHeading.textContent = "Pastel Romeu e Julieta";
+    let sixthDessertDescription = document.createElement("p");
+    sixthDessertDescription.textContent =
+            "A sweet and salty pastel made from white cheese and filled with"
+            + " guava jam.";
+    sixthDessert.appendChild(sixthDessertHeading);
+    sixthDessert.appendChild(sixthDessertDescription);
 
     desserts.appendChild(dessertsHeading);
     
@@ -188,6 +236,7 @@ function Menu() {
     desserts.appendChild(thirdDessert);
     desserts.appendChild(fourthDessert);
     desserts.appendChild(fifthDessert);
+    desserts.appendChild(sixthDessert);
 
     // Sides
     let sides = document.createElement("article");
