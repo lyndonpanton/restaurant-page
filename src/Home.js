@@ -1,7 +1,7 @@
 function Home() {
     let home = document.createElement("section");
     let homeHeading = document.createElement("h2");
-    homeHeading.textContent = "Lyndon's Restaurant";
+    homeHeading.textContent = "Lyn's Restaurant";
     let homeIntroduction = document.createElement("p");
     homeIntroduction.textContent =
             "Come to our restaurant to have some delicious food, see some"
