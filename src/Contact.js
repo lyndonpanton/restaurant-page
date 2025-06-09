@@ -12,29 +12,32 @@ function Contact() {
     let mail = document.createElement("p");
     mail.textContent = 
             "You post mail you would like us to see to 00, Happy Lane,"
-            + " Queensland, Antartica.";
+            + " Lagos, Brazil.";
     let phone = document.createElement("p");
     phone.textContent = "You can call on the number 01234567890";
 
+    online.appendChild(onlineHeading);
     online.appendChild(email);
     online.appendChild(mail);
     online.appendChild(phone);
 
     // In Person
     let inPerson = document.createElement("article");
+    let inPersonHeading = document.createElement("h3");
     let mainBranch = document.createElement("p");
     mainBranch.textContent =
-            "You can visit our main branch at 00, Happy Lane, Queensland,"
-            + " Antartica.";
+            "You can visit our main branch at 01, Delighted Street, Dehli,"
+            + " New Zealand.";
     let firstSubBranch = document.createElement("p");
     firstSubBranch.textContent =
-        "You can visit our first sub branch at 00, Happy Lane, Queensland,"
-            + " Antartica.";
+            "You can visit our first sub branch at 10, Estastic Road, Berlin,"
+            + " Canada.";
     let secondSubBranch = document.createElement("p");
     secondSubBranch.textContent =
-        "You can visit our first sub branch at 00, Happy Lane, Queensland,"
-            + " Antartica.";
+            "You can visit our first sub branch at 11, Glad Avenue, Vancouver,"
+            + " Germany.";
 
+    inPerson.appendChild(inPersonHeading);
     inPerson.appendChild(mainBranch);
     inPerson.appendChild(firstSubBranch);
     inPerson.appendChild(secondSubBranch);
