@@ -25,7 +25,7 @@ function Menu() {
     firstStarterDescription.textContent =
             "A soup delicacy made with cow feet, palm oil, ehuru seeds, utazi"
             + " leaves and spices. Served with crayfish seasoned with nutmeg"
-            + " and ground pepper";
+            + " and ground pepper.";
     firstStarter.appendChild(firstStarterTitle);
     firstStarter.appendChild(firstStarterDescription);
 
@@ -38,7 +38,7 @@ function Menu() {
     secondStarterDescription.textContent =
             "A chicken dumpling that are marinaded with chilli powder, garlic"
             + " puree, chicken puree, cumin and amchoor (dried mango). Filled"
-            + " with beef and served with chutney";
+            + " with beef and served with chutney.";
     secondStarter.appendChild(secondStarterTitle);
     secondStarter.appendChild(secondStarterDescription);
 
@@ -76,7 +76,7 @@ function Menu() {
             "A traditional dish made from mussels, pūhā and watercress that are"
             + " cooked together in a borth, stored in jars, and fermented."
             + " Chilli and garlic are used for seasoning during the"
-            + " fermentation process";
+            + " fermentation process.";
     fifthStarter.appendChild(fifthStarterTitle);
     fifthStarter.appendChild(fifthStarterDescription);
 
@@ -282,7 +282,7 @@ function Menu() {
     firstSideDescription.textContent =
             "A swallow prepared by pounding boiled yam with a mortat and pestle"
             + " that is heavy in consistency. Served with ewedu (jute leaves)"
-            + " soup";
+            + " soup.";
     firstSide.appendChild(firstSideHeading);
     firstSide.appendChild(firstSideDescription);
 
