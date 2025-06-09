@@ -85,7 +85,6 @@ function Menu() {
     starters.appendChild(fifthStarter);
     starters.appendChild(sixthStarter);
 
-
     // Mains
     let mains = document.createElement("article");
     let mainsHeading = document.createElement("h3")
@@ -243,18 +242,65 @@ function Menu() {
     let sidesHeading = document.createElement("h3")
     sidesHeading.textContent = "Sides";
 
-    let firstSide = document.createElement("p");
-    firstSide.textContent = "Pounded Yam";
-    let secondSide = document.createElement("p");
-    secondSide.textContent = "Murgh Hazrat Mahal";
-    let thirdSide = document.createElement("p");
-    thirdSide.textContent = "Flammekuchen";
-    let fourthSide = document.createElement("p");
-    fourthSide.textContent = "Battered Cheese Curds";
-    let fifthSide = document.createElement("p");
-    fifthSide.textContent = "Kiwi Onion Dip";
-    let sixthSide = document.createElement("p");
-    sixthMain.textContent = "Bolinho de Bacalhau";
+    let firstSide = document.createElement("article");
+    let firstSideHeading = document.createElement("h4");
+    firstSideHeading.textContent = "Pounded Yam";
+    let firstSideDescription = document.createElement("p");
+    firstSideDescription.textContent =
+            "A swallow prepared by pounding boiled yam with a mortat and pestle"
+            + " that is heavy in consistency. Served with ewedu (jute leaves)"
+            + " soup";
+    firstSide.appendChild(firstSideHeading);
+    firstSide.appendChild(firstSideDescription);
+
+    let secondSide = document.createElement("article");
+    let secondSideHeading = document.createElement("h4");
+    secondSideHeading.textContent = "Murgh Hazrat Mahal";
+    let secondSideDescription = document.createElement("p");
+    secondSideDescription.textContent =
+            "Boneless chicken chunks marinate with creamy and cheesy tandoori,"
+            + " cooked in tandoor and served in skewers.";
+    secondSide.appendChild(secondSideHeading);
+    secondSide.appendChild(secondSideDescription);
+
+    let thirdSide = document.createElement("article");
+    let thirdSideHeading = document.createElement("h4");
+    thirdSideHeading.textContent = "Flammkuchen";
+    let thirdSideDescription = document.createElement("p");
+    thirdSideDescription.textContent =
+            "A thin rectangle dough covered with fromage blanc, thinly sliced"
+            + " onions and lardons.";
+    thirdSide.appendChild(thirdSideHeading);
+    thirdSide.appendChild(thirdSideDescription);
+
+    let fourthSide = document.createElement("article");
+    let fourthSideHeading = document.createElement("h4");
+    fourthSideHeading.textContent = "Cheese and Herb Scones";
+    let fourthSideDescription = document.createElement("p");
+    fourthSideDescription.textContent =
+            "Plant-based scones filled with creamy non-dairy milk and vinegar.";
+    fourthSide.appendChild(fourthSideHeading);
+    fourthSide.appendChild(fourthSideDescription);
+
+    let fifthSide = document.createElement("article");
+    let fifthSideHeading = document.createElement("h4");
+    fifthSideHeading.textContent = "Kiwi Onion Dip";
+    let fifthSideDescription = document.createElement("p");
+    fifthSideDescription.textContent =
+            "A dip consisting of powdered onion soup, reduced cream, lemon"
+            + " juice, and malt vinegar.";
+    fifthSide.appendChild(fifthSideHeading);
+    fifthSide.appendChild(fifthSideDescription);
+
+    let sixthSide = document.createElement("article");
+    let sixthSideHeading = document.createElement("h4");
+    sixthSideHeading.textContent = "Bolinho de Bacalhau";
+    let sixthSideDescription = document.createElement("p");
+    sixthSideDescription.textContent =
+            "Potato croquettes seasoned with garlic, parsley, and onion and"
+            + " filled with salt cod.";
+    sixthSide.appendChild(sixthSideHeading);
+    sixthSide.appendChild(sixthSideDescription);
 
     sides.appendChild(sidesHeading);
     
