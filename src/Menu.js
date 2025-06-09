@@ -11,18 +11,70 @@ function Menu() {
     let startersHeading = document.createElement("h3");
     startersHeading.textContent = "Starters";
 
-    let firstStarter = document.createElement("p");
+    let firstStarter = document.createElement("article");
+    let firstStarterTitle = document.createElement("h4");
     firstStarter.textContent = "Nkwobi";
-    let secondStarter = document.createElement("p");
+    let firstStarterDescription = document.createElement("p");
+    firstStarterDescription.textContent =
+            "A soup delicacy made with cow feet, palm oil, ehuru seeds, utazi"
+            + " leaves and spices. Served with crayfish seasoned with nutmeg"
+            + " and ground pepper";
+    firstStarter.appendChild(firstStarterTitle);
+    firstStarter.appendChild(firstStarterDescription);
+
+    let secondStarter = document.createElement("article");
+    let secondStarterTitle = document.createElement("h4");
     secondStarter.textContent = "Tandoori Chicken Momos";
-    let thirdStarter = document.createElement("p");
+    let secondStarterDescription = document.createElement("p");
+    secondStarterDescription.textContent =
+            "A chicken dumpling that are marinaded with chilli powder, garlic"
+            + " puree, chicken puree, cumin and amchoor (dried mango). Filled"
+            + " with beef and served with chutney";
+    secondStarter.appendChild(secondStarterTitle);
+    secondStarter.appendChild(secondStarterDescription);
+
+    let thirdStarter = document.createElement("article");
+    let thirdStarterTitle = document.createElement("h4");
     thirdStarter.textContent = "Geräucherter Lachs";
-    let fourthStarter = document.createElement("p");
+    let thirdStarterDescription = document.createElement("p");
+    thirdStarterDescription.textContent =
+            "Small haddock pieces cold smoked in a smokedhouse for two weeks."
+            + " Topped with various vegetables.";
+    thirdStarter.appendChild(thirdStarterTitle);
+    thirdStarter.appendChild(thirdStarterDescription);
+
+    let fourthStarter = document.createElement("article");
+    let fourthStarterTitle = document.createElement("h4");
     fourthStarter.textContent = "Split Pea Soup";
-    let fifthStarter = document.createElement("p");
+    let fourthStarterDescription = document.createElement("p");
+    fourthStarterDescription.textContent =
+            "Dried split peas cooked in a soup over two hours and topped with"
+            + " parsley and chives.";
+    fourthStarter.appendChild(fourthStarterTitle);
+    fourthStarter.appendChild(fourthStarterDescription);
+
+    let fifthStarter = document.createElement("article");
+    let fifthStarterTitle = document.createElement("h4");
     fifthStarter.textContent = "Toroī";
-    let sixthStarter = document.createElement("p");
+    let fifthStarterDescription = document.createElement("p");
+    fifthStarterDescription.textContent =
+            "A traditional dish made from mussels, pūhā and watercress that are"
+            + " cooked together in a borth, stored in jars, and fermented."
+            + " Chilli and garlic are used for seasoning during the"
+            + " fermentation process";
+    fifthStarter.appendChild(fifthStarterTitle);
+    fifthStarter.appendChild(fifthStarterDescription);
+
+    let sixthStarter = document.createElement("article");
+    let sixthStarterTitle = document.createElement("h4");
     sixthStarter.textContent = "Acarajé";
+    let sixthStarterDescription = document.createElement("p");
+    sixthStarterDescription.textContent =
+            "Fritters made from black-eyed peas and filled with Vatapá and"
+            + " green tomato vinaigrette.";
+    sixthStarter.appendChild(sixthStarterTitle);
+    sixthStarter.appendChild(sixthStarterDescription);
+
     
     starters.appendChild(startersHeading);
 
