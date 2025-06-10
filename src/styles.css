@@ -136,14 +136,54 @@ main > * {
 
 /* Contact *********************************************************************/
 #contact {
-
+    
 }
 
 .contact-article {
 
 }
 
-.contact
+.contact {
+    margin: 40px 0;
+    border: 2px solid black;
+    padding: 10px 20px;
+
+}
+
+.contact-heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact > p {
+    font-size: 1.5rem;
+}
+
+.contact-detail {
+    text-decoration: underline;
+}
+
+.contact-detail:hover {
+    color: darkgreen;
+    text-decoration-style: dotted;
+
+    cursor: pointer;
+}
+
+#contact-social {
+
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 40px 0;
+
+    font-size: 1.5rem;
+    
+    list-style-type: none;
+}
 
 /* Footer *********************************************************************/
 footer {
