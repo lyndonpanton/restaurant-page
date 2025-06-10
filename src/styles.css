@@ -185,10 +185,27 @@ main > * {
     list-style-type: none;
 }
 
+.social-list-link {
+    color: black;
+    text-decoration-style: none;
+}
+
+.social-list-link:hover {
+    color: darkgreen;
+    text-decoration-style: dotted;
+
+    cursor: pointer;
+}
+
 /* Footer *********************************************************************/
 footer {
     border-top: 2px solid black;
-    padding: 40px 10vw;
+    padding: 20px 10vw;
 
     background-color: white;
+}
+
+#footer-copyright {
+    font-size: 1.5rem;
+    text-align: center;
 }
